@@ -1,0 +1,33 @@
+.hero {
+    height: 84vh;
+    min-height: 500px;
+    position: relative;
+}
+
+.project-hero,
+.page-hero {
+    height: 320px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.project-cover {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

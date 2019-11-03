@@ -1,0 +1,52 @@
+---
+
+title: Tiffinity App - Projects Devang Patel - Product Designer & Front End Developer
+description: NewsDeck by Mokko | Sublime mobile news experience.
+layout: project-single
+slug: tiffinity-app
+
+order: 2
+projectName: Tiffinity App
+tags: ['Product Design', 'Prototyping', 'Origami Studio', 'React Native']
+thumb: thumb-tiffinity.png
+
+intro-summary: Delivering Homemade Food.
+role: Product Designer, Project Manager, App Developer 
+client: Mokko 
+link: http://newsdeck.mokko.io
+
+
+project-intro-text: Full case study coming soon.
+
+---
+
+<div class="project-cover container bg-{{page.slug}}">
+    <img class="b-lazy"  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ site.baseurl }}/assets/images/{{page.thumb}}" alt="{{page.title}}">
+</div>
+
+<div class="project-content">
+    <div class="container">
+
+        <div class="project-stats clearfix">
+            <div class="col">
+                <span><strong>Client / Company</strong></span>
+                <p>
+                    {{page.client}}
+                </p>
+            </div>
+            <div class="col">
+                <span><strong>Role</strong></span>
+                <p class="small">
+                    {{page.role}}
+                </p>
+            </div>
+            {% if page.link %}
+                <a href="{{page.link}}" class="btn bg-{{page.slug}}">Project Link</a>
+             {% endif %}
+        </div>
+        
+        <p class="mid">{{page.project-intro-text}}</p>
+        
+        
+    </div>
+</div>

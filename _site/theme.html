@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Devang Patel - Product Designer & Front End Developer</title>
+        <meta name="description" content="I specialize in product design, product prototyping, and front end development." />
+        <link rel="stylesheet" type="text/css" href="css/site.css" />
+    </head>
+    <body>
+        <div class="container" style="padding-top: 100px; padding-bottom: 100px">
+            <h1 id="heading-1">Heading 1</h1>
+<h2 id="heading-2">Heading 2</h2>
+<h3 id="heading-3">Heading 3</h3>
+<hr />
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">Test</span> <span class="o">=</span> <span class="nx">Parse</span><span class="p">.</span><span class="nb">Object</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="s2">"Test"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">newTest</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Test</span><span class="p">();</span>
+<span class="nx">newTest</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">'name'</span><span class="p">,</span> <span class="s1">'Something'</span><span class="p">);</span>
+<span class="nx">newTest</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+</code></pre>
+</div>
+
+        </div>
+
+        <footer>
+  <div class="container">
+    <p class="text-center">
+      Made with <span>❤</span> for Design +
+      <a href="https://jekyllrb.com/" class="link" target="_blank">Jekyllrb</a>
+    </p>
+  </div>
+</footer>
+
+<div class="site-background"></div>
+<script src="/assets/js/blazy.min.js"></script>
+<script>
+  (function () {
+    // Initialize
+    var bLazy = new Blazy({
+      success: function (element) {
+        setTimeout(function () {
+          // We want to remove the loader gif now.
+          // First we find the parent container
+          // then we remove the "loading" class which holds the loader image
+          var parent = element.parentNode;
+          parent.className = parent.className.replace(/\bloading\b/, "");
+        }, 200);
+      }
+    });
+  })();
+</script>
+<script src="/assets/js/plugins.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    (i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date());
+    (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "//www.google-analytics.com/analytics.js",
+    "ga"
+  );
+
+  ga("create", "UA-57616322-1", "auto");
+  ga("send", "pageview");
+</script>
+    </body>
+</html>

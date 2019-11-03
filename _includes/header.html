@@ -1,0 +1,32 @@
+<div class="preloader"></div>
+{% if page.headerStyle == "dark" %}
+<header class="light-header">
+{% else %}
+<header>
+{% endif %}
+  <div class="container clearfix">
+    <nav>
+      <ul class="clearfix">
+        <li {% if page.url == '/' %} class="active"{% endif %}><a href='/'>Projects</a></li>
+        <li {% if page.url == '/about.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/about">About me</a></li>
+      </ul>
+    </nav>
+
+    <div class="top-right">
+        <a href="https://twitter.com/p_devang" class="soc-link" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/twt.svg" width="20" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/devang-patel-055b9b113/" class="soc-link" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/linkedin.svg" width="20" alt="">
+        </a>
+        <a href="https://dribbble.com/mycreativeway" class="soc-link" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/dribbble.svg" width="20" alt="">
+        </a>
+        <a href="mailto:contact@devangdesign.com" class="soc-link">
+            <img src="{{ site.baseurl }}/assets/images/mail.svg" width="22" alt="">
+        </a>
+    </div>
+
+
+  </div>
+</header>

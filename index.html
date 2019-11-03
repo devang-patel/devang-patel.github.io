@@ -1,0 +1,54 @@
+---
+title: Devang Patel - Product Designer & Front End Developer from Berlin, Germany | Portfolio
+description: Devang is a Multidisciplinary Product Designer & Front End Developer with over 6 years of experience.
+layout: homepage
+---
+
+<div class="hero">
+  <div class="vlign-wrapper">
+    <div class="vlign-cell">
+      <div class="hero-content container">
+        <h1>
+          Hi, I'm Devang. <br /> A multidisciplinary designer based in Berlin, Germany.
+          Currently, Product designer and design system lead at
+          <a href="https://www.omio.com" target="_blank">Omio.</a>
+        </h1>
+        <p>Selected work 👇</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="projects-list page-content">
+  <div class="container">
+    <div class="project-list-wrapper clearfix grid" data-grid>
+      {% assign sorted_pages = site.projects | sort:"order" %} {% for project in
+      sorted_pages %} {% assign loopindex = forloop.index | modulo: 2 %}
+      <div class="grid-item" data-packed>
+        <a href="{{ project.url }}">
+          <div class="project-image loading thumb-{{ project.slug }} bg-{{
+              project.slug
+            }}">
+            {% if project.slug == 'newsdeck' %}
+            <video class="b-lazy" autoplay loop muted>
+              <source data-src="{{ site.baseurl }}/assets/images/newsdeck.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            {% endif %} {% if project.slug != 'newsdeck' %}
+            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-src="{{ site.baseurl }}/assets/images/{{ project.thumb }}" alt="{{ project.title }}" />
+            {% endif %}
+          </div>
+          <div class="project-info">
+            <h3>{{ project.projectName }}</h3>
+            <p>
+              {{ project.intro-summary }}
+            </p>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

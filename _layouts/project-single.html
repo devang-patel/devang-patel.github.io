@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+
+    {% include header.html %}
+
+
+    <div class="content">
+        <div class="project-hero">
+            <div class="vlign-wrapper">
+                <div class="vlign-cell bottom">
+                    <div class="hero-content container">
+                        <h1>{{page.intro-summary}}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{content}}
+    </div>
+
+    {% include footer.html %}
+</body>
+
+</html>

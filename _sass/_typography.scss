@@ -1,0 +1,114 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: inherit;
+  color: $color_headings;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #222;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.75);
+  }
+
+  strong,
+  span {
+    font-weight: 800;
+  }
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 38px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 26px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+p,
+span,
+li {
+  font-family: inherit;
+  font-weight: 400;
+  margin: 0;
+
+  strong {
+    font-weight: 800;
+    letter-spacing: 1.5px;
+  }
+}
+
+p,
+li {
+  color: $color_paragraph;
+}
+
+p {
+  background: white;
+  line-height: 36px;
+  font-size: 24px;
+}
+
+a {
+  color: $color_paragraph;
+  text-decoration: none;
+
+  &.link,
+  span.link {
+    background-position: 0% 100%, 110% 90%, 0% 98%;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    -webkit-background-size: 2px 1px, 2px 1px, 1px 1px;
+    -moz-background-size: 2px 1px, 2px 1px, 1px 1px;
+    background-size: 2px 1px, 2px 1px, 1px 1px;
+    text-shadow: 2px 0 #ffffff, -2px 0 #ffffff, 0 2px #ffffff, 0 -2px #ffffff,
+      2px 0 #ffffff, -2px 0 #ffffff, 2px 0 #ffffff, -2px 0 #ffffff,
+      2px 0 #ffffff, -2px 0 #ffffff, 2px 0 #ffffff, -2px 0 #ffffff;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff),
+      linear-gradient($color_links, $color_links);
+
+    &:hover {
+      color: $color_links;
+    }
+  }
+}
+
+.hero-content-light {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    color: white;
+    background: white;
+  }
+}

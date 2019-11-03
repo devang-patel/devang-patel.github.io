@@ -1,0 +1,55 @@
+---
+
+title: NewsDeck by Mokko - Projects Devang Patel - Product Designer & Front End Developer
+description: NewsDeck by Mokko | Sublime mobile news experience.
+layout: project-single
+slug: newsdeck
+
+order: 1
+projectName: NewsDeck
+tags: ['Product Design', 'Fuse Tools', 'App',' Hackathon']
+thumb: thumb2-newsdeck.png
+
+intro-summary: A refreshingly simple take on the news reader experience. 
+role: Product Designer, Project Manager, App Developer 
+client: Mokko 
+link: http://newsdeck.mokko.io
+
+
+project-intro-text: News Deck was built in under a week with a free API <a href="https://newsapi.org/" class="link" target="_blank">(NewsAPI.org)</a> to bring you the top news feeds from around the world - and you can use simple, intuitive gestures to read exactly what you are interested in. 
+
+---
+
+<div class="project-cover container bg-{{page.slug}}">
+    <video class="b-lazy" autoplay loop muted>
+         <source data-src="{{ site.baseurl }}/assets/images/newsdeck.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div class="project-content">
+    <div class="container">
+
+        <div class="project-stats clearfix">
+            <div class="col">
+                <span><strong>Client / Company</strong></span>
+                <p>
+                    {{page.client}}
+                </p>
+            </div>
+            <div class="col">
+                <span><strong>Role</strong></span>
+                <p class="small">
+                    {{page.role}}
+                </p>
+            </div>
+            {% if page.link %}
+                <a href="{{page.link}}" class="btn bg-{{page.slug}}">Project Link</a>
+             {% endif %}
+        </div>
+        
+        <p class="mid">{{page.project-intro-text}}</p>
+        
+        <img src="{{ site.baseurl }}/assets/images/newsdeck-app-img-1.jpg" class="full-img" alt="">
+    </div>
+</div>
