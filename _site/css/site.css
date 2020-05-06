@@ -156,6 +156,9 @@ p {
 a {
   text-decoration: none; }
 
+p a {
+  text-decoration: underline; }
+
 header {
   padding: 32px 0px;
   position: fixed;
