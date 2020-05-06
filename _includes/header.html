@@ -1,18 +1,18 @@
-<div class="preloader"></div>
+<body class="light-mode">
+  
 {% if page.headerStyle == "dark" %}
-<header class="light-header">
+<header>
 {% else %}
 <header>
 {% endif %}
-  <div class="container clearfix">
-    <nav>
-      <ul class="clearfix">
-        <li {% if page.url == '/' %} class="active"{% endif %}><a href='/'>Projects</a></li>
-        <li {% if page.url == '/about.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/about">About me</a></li>
-      </ul>
-    </nav>
+  <div class="container-full clearfix">
+    <div class="logo">
+      <h1><a href='/'>Devang Patel</a></h1>
+    </div>
+    
 
     <div class="top-right">
+      <!--
         <a href="https://twitter.com/p_devang" class="soc-link" target="_blank">
             <img src="{{ site.baseurl }}/assets/images/twt.svg" width="20" alt="">
         </a>
@@ -24,9 +24,24 @@
         </a>
         <a href="mailto:contact@devangdesign.com" class="soc-link">
             <img src="{{ site.baseurl }}/assets/images/mail.svg" width="22" alt="">
-        </a>
+        </a>-->
+        <nav>
+          <ul class="clearfix">
+            <li {% if page.url == '/' %} class="active"{% endif %}><a href='{{ site.baseurl }}/'>Work</a></li>
+            <li {% if page.url == '/about.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/about">About</a></li>
+          </ul>
+        </nav>
     </div>
 
 
   </div>
 </header>
+
+<div class="modes">
+  <span class="day active">
+    <img src="{{ site.baseurl }}/assets/images/sun.svg" alt="">
+  </span>
+  <span class="night">
+    <img src="{{ site.baseurl }}/assets/images/moon.svg" alt="">
+  </span>
+</div>

@@ -1,5 +1,5 @@
 header {
-  padding: 16px 0px;
+  padding: 32px 0px;
   position: fixed;
   left: 0;
   top: 0;
@@ -13,16 +13,60 @@ header {
   );
 }
 
+.modes {
+  position: fixed;
+  bottom: 16px;
+  right:16px;
+  text-align: center;
+  z-index: 5;
+  span {
+    display:block;
+    width:32px;
+    border-radius: 50%;
+    height:32px;
+    cursor: pointer;
+    margin: 0 4px;
+    box-shadow: 0 0 4px #00000030;
+    padding: 6px 0 0 0;
+  }
+  span.active {
+    display: none;
+  }
+
+  span img {
+    opacity: 0.8;
+    width: 18px;
+    vertical-align: center;
+    height: 18px;
+  }
+}
+
+.modes .day {
+  background:$light_body_bg;
+}
+.modes .day img {
+  fill: $light_paragraph_color;
+}
+
+.modes .night {
+  background:$dark_body_bg;
+}
+.modes .night img {
+  fill: $dark_paragraph_color;
+}
+
 .logo {
   display: inline-block;
   vertical-align: middle;
+  a {
+    text-decoration: none;
+  }
   h1 {
-    font-size: 30px;
+    margin: 0;
+    font-size: 24px;
     line-height: 30px;
     font-weight: 400;
-    strong {
-      font-weight: 800;
-    }
+    font-family: 'Source Serif Pro', serif;
   }
 }
 
@@ -46,21 +90,19 @@ nav {
   }
   li {
     float: left;
-    margin-right: 50px;
+    margin-left: 32px;
     a {
       padding: 0px 1px;
       position: relative;
       display: inline-block;
-      text-decoration: none !important;
       overflow: hidden;
       font-size: 16px;
-      letter-spacing: 0.5px;
       font-weight: 400;
       color: $color_headings;
     }
     &.active {
       a {
-        font-weight: 700;
+        text-decoration: line-through;
       }
 
       &:hover a:after,
@@ -68,24 +110,6 @@ nav {
         right: 0% !important;
         width: 100%;
       }
-    }
-  }
-}
-
-header {
-  &.light-header {
-    nav a,
-    nav a:visited {
-      color: white;
-    }
-    nav {
-      a:after {
-        background: white !important;
-      }
-    }
-
-    .logo h1 {
-      color: white !important;
     }
   }
 }
@@ -125,6 +149,6 @@ header {
 @media (min-width: 780px) {
   header.sticky {
     padding: 8px 0px;
-    background:rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
   }
 }

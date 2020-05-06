@@ -5,7 +5,6 @@
     {% include head.html %}
 </head>
 
-<body>
 
     {% include header.html %}
 
@@ -14,16 +13,60 @@
         <div class="project-hero">
             <div class="vlign-wrapper">
                 <div class="vlign-cell bottom">
-                    <div class="hero-content container">
-                        <h1>{{page.intro-summary}}</h1>
+                    <div class="hero-content container-small">
+                        <h1>{{page.projectName}}</h1>
+                        <p>{{page.intro-summary}}</p>
                     </div>
                 </div>
             </div>
         </div>
-        {{content}}
+
+        <div class="project-cover container bg-{{page.slug}}">
+            {% if page.slug == 'newsdeck' %}
+            <video class="b-lazy" autoplay loop muted>
+              <source data-src="{{ site.baseurl }}/assets/images/newsdeck.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            {% endif %} {% if page.slug != 'newsdeck' %}
+            <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-src="{{ site.baseurl }}/assets/images/{{ page.thumb }}" alt="{{ page.title }}" />
+            {% endif %}
+        </div>
+
+        <div class="project-content">
+            <div class="container-small">
+        
+                <div class="project-stats clearfix">
+                    <div class="col">
+                        <span><strong>Role</strong></span>
+                        <p class="small">
+                            {{page.role}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <span><strong>Year</strong></span>
+                        <p>
+                            {{page.year}}
+                        </p>
+                    </div>
+                    
+                    {% if page.link %}
+                    <div class="col">
+                        <span><strong>Link</strong></span>
+                        <a href="{{page.link}}" class="btn">{{page.link}}</a>
+                    </div>
+                     {% endif %}
+                </div>
+                
+            </div>
+
+            {{content}}
+        </div>
+        
+        
     </div>
 
     {% include footer.html %}
-</body>
 
 </html>

@@ -3,22 +3,10 @@
   position: relative;
 }
 
-.about-content {
-  padding-top: 80px;
- 
-  img {
-    max-width: 320px;
-    margin-bottom:20px;
-    width:100%;
-    height:auto;
-  }
-
-}
-
 .hero {
   .hero-content {
     h1 {
-      max-width: 900px;
+      max-width: 600px;
       & > span {
         display: inline-block;
         overflow: hidden;
@@ -59,9 +47,7 @@
 .project-hero {
   .hero-content {
     h1 {
-      font-size: 36px;
-      letter-spacing: 1px;
-      line-height: 44px;
+      margin-bottom: 20px;
       span {
         display: inline-block;
       }
@@ -78,7 +64,8 @@
 .project-image {
   width: 100%;
   overflow: hidden;
-  margin-bottom: 40px;
+  height: 380px;
+  margin-bottom: 80px;
   position: relative;
   &.loading {
     background-image: url("../assets/images/loading.svg");
@@ -103,22 +90,22 @@
 }
 
 .project-info {
-  width: 100%;
-  margin: 24px 0 0 40px;
+  width: 50%;
+  margin: 8px 0 0 40px;
 }
 
 // Project Stylings
 .bg-newsdeck {
-  background: #f7c737;
+  background: #f6cd3d;
 }
 
 .thumb-newsdeck {
-  height: 580px;
   img {
     position: absolute;
     bottom: 0;
     width: 80%;
     left: 50%;
+    max-height: 90%;
     display: inline-block;
   }
   video {
@@ -126,21 +113,39 @@
     z-index: 3;
     left: 50%;
     top: 50%;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 110%;
   }
 }
 
-.bg-tiffinity-app {
-  background: #ff3b4b;
+.gif-bg {
+  background: #D6D6D6;
+  width:100%;
+  padding-top: 80px;
+  text-align: center;
 }
 
-.thumb-tiffinity-app {
-  height: 700px;
+.gif-img {
+  max-width: 700px;
+  width: 100%;
+  vertical-align: bottom;
+  height: auto;
+}
+
+.bg-tiffinity-app {
+  background: #df4a39;
+}
+
+.bg-omio-rebranding {
+  background-color:#5E90CC;
+}
+
+.thumb-tiffinity-app,
+.thumb-omio-rebranding {
   img {
     position: absolute;
-    top: 50%;
-    width: 290px;
+    top: 90%;
+    width: 240px;
     left: 50%;
     display: inline-block;
   }
@@ -151,11 +156,10 @@
 }
 
 .thumb-ripple-bugs {
-  height: 540px;
   img {
     position: absolute;
     top: 50%;
-    width: 420px;
+    width: 300px;
     left: 50%;
     display: inline-block;
   }
@@ -166,7 +170,6 @@
 }
 
 .thumb-tiffinity-web {
-  height: 560px;
   img {
     position: absolute;
     top: 50%;
@@ -181,11 +184,10 @@
 }
 
 .thumb-ker-webshop {
-  height: 630px;
   img {
     position: absolute;
-    top: 50%;
-    width: 470px;
+    top: 90%;
+    width: 400px;
     left: 50%;
     display: inline-block;
   }
@@ -196,11 +198,10 @@
 }
 
 .thumb-intellichill {
-  height: 580px;
   img {
     position: absolute;
-    top: 50%;
-    width: 420px;
+    top: 70%;
+    width: 400px;
     left: 50%;
     display: inline-block;
   }
@@ -213,13 +214,16 @@
 // Project Details Page
 .project-content {
   padding: 0px 0px 100px 0px;
+
   img.full-img {
     width: 100%;
-    margin: 90px 0px;
   }
-  p.mid {
-    max-width: 900px;
+
+  .text-content,
+  .image-content {
+    margin-bottom: 80px;
   }
+
 }
 
 .project-cover {
@@ -250,10 +254,11 @@
 }
 
 .project-stats {
-  margin: 70px 0px 80px 0px;
+  margin:40px 0px;
   position: relative;
   .col {
-    width: 45%;
+    width:33.3333%;
+    margin-bottom: 30px;
     float: left;
     strong {
       display: block;
@@ -271,9 +276,7 @@
     }
   }
   .btn {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    text-decoration: underline;
   }
 }
 
@@ -297,4 +300,49 @@
 .img-full {
   width: 100%;
   height: auto;
+}
+
+
+// Dark mode
+
+.light-mode {
+  background: $light_body_bg;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $light_headings_color;
+  }
+  p, span, li {
+    color: $light_paragraph_color;
+  }
+  a {
+    color: $light_paragraph_color;
+  }
+  header.sticky {
+    background: $light_body_bg;
+  }
+}
+
+.dark-mode {
+  background: $dark_body_bg;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $dark_headings_color;
+  }
+  p, span, li {
+    color: $dark_paragraph_color;
+  }
+  a {
+    color: $dark_paragraph_color;
+  }
+  header.sticky {
+    background: $dark_body_bg;
+  }
 }

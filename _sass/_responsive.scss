@@ -83,6 +83,10 @@
   .hero-content br {
     display: none;
   }
+  h3 {
+    font-size: 28px;
+    margin-bottom: 4px;
+}
   .hero {
     height: 500px;
   }
@@ -101,29 +105,15 @@
     padding-right: 40px;
   }
 
-  .about-content {
-    padding-top: 120px;
-  }
-
   .col-2,
   .grid-item {
     padding-bottom: 70px;
   }
 
   header {
-    position: fixed;
-    left:0;
-    bottom:0;
-    top:auto;
-    background: #fff;
     padding: 12px 0;
-    border-top: 1px solid #00000024;
-    line-height: normal !important;
   }
-  header li {
-    line-height: normal !important;
-  }
-
+  
   .floating-articles {
     display: none;
   }
@@ -178,14 +168,6 @@
       }
     }
 
-    .bar {
-      display: block;
-      height: 3px;
-      width: 100%;
-      background: black;
-      margin: 7px auto;
-    }
-
     .middle {
       margin: 0 auto;
     }
@@ -195,7 +177,8 @@
     }
   }
 
-  .project-stats .col {
+  .project-stats .col,
+  .project-info {
     width: 100%;
     float: left;
     margin-bottom: 40px;
@@ -212,13 +195,18 @@
   .project-image {
     margin-bottom: 16px;
   }
+  .content {
+      margin: 120px 0 0 0;
+  }
 }
 @media (max-width: 500px) {
   .container,
-  .container-small {
+  .container-small,
+  .container-full {
     padding-left: 16px;
     padding-right: 16px;
   }
+
 
   li,
   p {
@@ -226,31 +214,10 @@
     line-height: 24px;
   }
 
-  .about-content {
-    padding-top: 90px;
-  }
-
   .col-2,
   .grid-item {
     padding-bottom: 80px;
   }
 
-  nav li {
-    float: left;
-    margin-right: 24px;
-  }
-  
-  .project-hero,
-  .page-hero {
-    height: 210px;
-    position: relative;
-    margin-bottom: 50px;
-  }
 
-  .top-right a {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 11px 0 7px;
-    width: 12px;
-  }
 }

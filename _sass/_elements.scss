@@ -1,16 +1,30 @@
 .hero {
-    height: 84vh;
-    min-height: 500px;
+    min-height: 300px;
+    padding: 100px 0;
     position: relative;
+}
+
+.content {
+    margin: 200px 0 0 0;
 }
 
 .project-hero,
 .page-hero {
-    height: 320px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
+.card-shadow,
+.full-img {
+}
+
+.caption {
+    opacity: 0.65;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    padding: 4px 8px;
+}
 
 .project-cover {
     height: 600px;
