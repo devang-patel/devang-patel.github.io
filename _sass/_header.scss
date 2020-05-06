@@ -41,18 +41,18 @@ header {
   }
 }
 
-.modes .day {
-  background:$light_body_bg;
-}
-.modes .day img {
-  fill: $light_paragraph_color;
-}
-
 .modes .night {
-  background:$dark_body_bg;
+  background:$light_paragraph_color;
 }
 .modes .night img {
-  fill: $dark_paragraph_color;
+  fill: $light_body_bg;
+}
+
+.modes .day {
+  background:$dark_paragraph_color;
+}
+.modes .day img {
+  fill: $dark_body_bg;
 }
 
 .logo {

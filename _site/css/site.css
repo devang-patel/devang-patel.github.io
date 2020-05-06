@@ -193,17 +193,17 @@ header {
     vertical-align: center;
     height: 18px; }
 
-.modes .day {
-  background: #e8f1f5; }
-
-.modes .day img {
-  fill: #004a7c; }
-
 .modes .night {
-  background: #2c003e; }
+  background: #755184; }
 
 .modes .night img {
-  fill: #ea9085; }
+  fill: #fdfaf9; }
+
+.modes .day {
+  background: #ea9085; }
+
+.modes .day img {
+  fill: #2c003e; }
 
 .logo {
   display: inline-block;
@@ -576,20 +576,20 @@ footer {
   height: auto; }
 
 .light-mode {
-  background: #e8f1f5; }
+  background: #fdfaf9; }
   .light-mode h1,
   .light-mode h2,
   .light-mode h3,
   .light-mode h4,
   .light-mode h5,
   .light-mode h6 {
-    color: #005691; }
+    color: #5b306d; }
   .light-mode p, .light-mode span, .light-mode li {
-    color: #004a7c; }
+    color: #755184; }
   .light-mode a {
-    color: #004a7c; }
+    color: #755184; }
   .light-mode header.sticky {
-    background: #e8f1f5; }
+    background: #fdfaf9; }
 
 .dark-mode {
   background: #2c003e; }
@@ -599,7 +599,7 @@ footer {
   .dark-mode h4,
   .dark-mode h5,
   .dark-mode h6 {
-    color: #ffa372; }
+    color: #ffc6a7; }
   .dark-mode p, .dark-mode span, .dark-mode li {
     color: #ea9085; }
   .dark-mode a {
