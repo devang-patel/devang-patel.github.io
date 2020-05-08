@@ -4,8 +4,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: $heading_font_weight;
+  font-family: $heading_fonts;
   margin: 0;
   padding: 0;
 
@@ -42,7 +42,6 @@ h4 {
 
 h5 {
   font-size: 26px;
-  font-family: 'Source Serif Pro', serif; 
   margin-bottom: 18px;
 }
 
@@ -50,11 +49,19 @@ h6 {
   font-size: 22px;
 }
 
+
+.nav a,
+.logo h1 a {
+  font-family: $para_fonts;
+}
+
+
+
 p,
 span,
 li {
-  font-family: 'Source Serif Pro', serif;
-  font-weight: 400;
+  font-family: $para_fonts;
+  font-weight: $para_font_weights;
   margin: 0;
 
   strong {

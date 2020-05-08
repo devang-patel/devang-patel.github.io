@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Playfair+Display:wght@700&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -88,7 +89,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0; }
   h1 a,
@@ -131,16 +132,19 @@ h4 {
 
 h5 {
   font-size: 26px;
-  font-family: 'Source Serif Pro', serif;
   margin-bottom: 18px; }
 
 h6 {
   font-size: 22px; }
 
+.nav a,
+.logo h1 a {
+  font-family: "Old Standard TT", serif; }
+
 p,
 span,
 li {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Old Standard TT", serif;
   font-weight: 400;
   margin: 0; }
   p strong,
@@ -194,16 +198,16 @@ header {
     height: 18px; }
 
 .modes .night {
-  background: #755184; }
+  background: #283c63; }
 
 .modes .night img {
-  fill: #fdfaf9; }
+  fill: #ffffff; }
 
 .modes .day {
-  background: #ea9085; }
+  background: #ff6363; }
 
 .modes .day img {
-  fill: #2c003e; }
+  fill: #202040; }
 
 .logo {
   display: inline-block;
@@ -214,8 +218,7 @@ header {
     margin: 0;
     font-size: 24px;
     line-height: 30px;
-    font-weight: 400;
-    font-family: 'Source Serif Pro', serif; }
+    font-weight: 400; }
 
 .top-right {
   float: right; }
@@ -576,36 +579,36 @@ footer {
   height: auto; }
 
 .light-mode {
-  background: #fdfaf9; }
+  background: #ffffff; }
   .light-mode h1,
   .light-mode h2,
   .light-mode h3,
   .light-mode h4,
   .light-mode h5,
   .light-mode h6 {
-    color: #5b306d; }
+    color: #283c63; }
   .light-mode p, .light-mode span, .light-mode li {
-    color: #755184; }
+    color: #283c63; }
   .light-mode a {
-    color: #755184; }
+    color: #283c63; }
   .light-mode header.sticky {
-    background: #fdfaf9; }
+    background: #ffffff; }
 
 .dark-mode {
-  background: #2c003e; }
+  background: #202040; }
   .dark-mode h1,
   .dark-mode h2,
   .dark-mode h3,
   .dark-mode h4,
   .dark-mode h5,
   .dark-mode h6 {
-    color: #ffc6a7; }
+    color: #ffbd69; }
   .dark-mode p, .dark-mode span, .dark-mode li {
-    color: #ea9085; }
+    color: #ff6363; }
   .dark-mode a {
-    color: #ea9085; }
+    color: #ff6363; }
   .dark-mode header.sticky {
-    background: #2c003e; }
+    background: #202040; }
 
 @media (max-width: 1700px) {
   .container {

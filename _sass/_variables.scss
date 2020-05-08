@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Playfair+Display:wght@700&display=swap');
+
+$heading_fonts:  'Playfair Display', serif;
+$heading_font_weight: 700;
+$para_fonts:'Old Standard TT', serif;
+$para_font_weights: 400;
+
 $color_links: #ff3b4b;
 $color_headings: #1a1a1a;
 $color_paragraph:#3e3e3e;
 
 // Light theme
-$light_body_bg: #fdfaf9;
-$light_headings_color: #5b306d;
-$light_paragraph_color:#755184;
+$light_body_bg: #ffffff;
+$light_headings_color: #283c63;
+$light_paragraph_color:#283c63;
 
 // Dark theme
-$dark_body_bg: #2c003e;
-$dark_headings_color: #ffc6a7;
-$dark_paragraph_color:#ea9085	;
+$dark_body_bg: #202040;
+$dark_headings_color: #ffbd69;
+$dark_paragraph_color:#ff6363;
