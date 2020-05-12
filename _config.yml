@@ -28,6 +28,9 @@ collections:
     projects:
       output: true
       permalink: /projects/:title/
+    experiments:
+      output: true
+      permalink: /experiments/:title/
 sass:
     sass_dir: _sass
 

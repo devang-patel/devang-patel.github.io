@@ -1,0 +1,32 @@
+---
+title: Lab experiments
+description: Devang is a Multidisciplinary Product Designer & Front End Developer with over 9 years of experience in crafting digital products
+layout: default
+---
+
+<div class="projects-list page-content">
+  <div class="container">
+    <div class="lab-list-wrapper clearfix grid" data-grid>
+      {% assign sorted_pages = site.experiments | sort:"order" %} {% for project in
+      sorted_pages %} {% assign loopindex = forloop.index | modulo: 2 %}
+      <div class="lab-item" data-packed>
+        <a href="{{ project.url }}" class="loading">
+          <div class="lab-image loading thumb-{{ project.slug }} bg-{{
+              project.slug
+            }}" style="background-color:{{ project.bg }}">
+
+            <img class="b-lazy loading" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-src="{{ site.baseurl }}/assets/images/{{ project.thumb }}" alt="{{ project.title }}" />
+          </div>
+          <div class="lab-info">
+            <h4>{{ project.projectName }}</h4>
+            <p>
+              {{ project.intro-summary }}
+            </p>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

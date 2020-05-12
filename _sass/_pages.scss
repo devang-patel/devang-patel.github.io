@@ -89,6 +89,75 @@
   }
 }
 
+.lab-list-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+
+.lab-item {
+  width:45%;
+}
+
+.lab-intro {
+  margin-bottom: 32px;
+
+  p {
+    font-size: 14px;
+  }
+}
+.intro-card {
+  width:100%;
+  position: relative;
+  height: 340px;
+  img {
+    max-width: 290px;
+    max-height: 200px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    will-change: transform;
+    @include transform(translate(-50%, -50%));
+    -webkit-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.lab-image {
+  width: 100%;
+  overflow: hidden;
+  height: 380px;
+  margin-bottom: 16px;
+  position: relative;
+
+  img {
+    max-width: 290px;
+    max-height: 200px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+  }
+  &.loading {
+    background-image: url("../assets/images/loading.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .b-lazy {
+    will-change: transform;
+    @include transform(translate(-50%, -50%));
+    -webkit-transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 0;
+  }
+  .b-lazy.b-loaded {
+    @include transform(translate(-50%, -50%));
+    opacity: 1;
+  }
+  &:hover .b-lazy.b-loaded {
+    @include transform(translate(-50%, -50%) scale(1.1));
+  }
+}
+
 .project-info {
   width: 50%;
   margin: 8px 0 0 40px;

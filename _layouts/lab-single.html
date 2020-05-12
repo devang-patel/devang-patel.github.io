@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include head.html %}
+</head>
+
+
+    {% include header.html %}
+
+
+    <div class="content">
+        <div class="project-hero">
+            <div class="vlign-wrapper">
+                <div class="vlign-cell bottom">
+                    <div class="hero-content container-small">
+                        <h1>{{page.projectName}}</h1>
+                        <p>{{page.intro-summary}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-content">
+            <div class="container lab-intro">
+                <div class="intro-card" style="background-color:{{ page.bg }}">
+                    <img src="{{ site.baseurl }}/assets/images/{{ page.thumb }}" alt="{{ page.title }}" />
+                    
+                </div>
+                
+            </div>
+
+            <div class="container-small text-content">
+                <h6>URL</h6>
+                <p><a href="{{page.link}}" class="btn">{{page.link}}</a></p>
+
+            </div>
+            <div class="container-small text-content">
+                <p>{{page.about}}
+                </p>
+            </div>
+
+            {{content}}
+        </div>
+        
+        
+    </div>
+
+    {% include footer.html %}
+
+</html>

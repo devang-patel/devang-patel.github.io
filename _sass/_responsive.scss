@@ -80,6 +80,15 @@
   }
 }
 @media (max-width: 780px) {
+  .lab-item {
+    width:100%;
+    margin-bottom: 40px;
+  }
+  .lab-list-wrapper {
+      display: block;
+      margin-bottom: 0;
+  }
+  
   .hero-content br {
     display: none;
   }
