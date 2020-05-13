@@ -598,6 +598,8 @@ footer {
 
 .project-content {
   padding: 0px 0px 100px 0px; }
+  .project-content p {
+    margin-bottom: 40px; }
   .project-content img.full-img {
     width: 100%; }
   .project-content .text-content,
@@ -883,6 +885,18 @@ footer {
   .logo h1 {
     width: 100px; } }
 @media (max-width: 500px) {
+  .project-content p {
+    margin-bottom: 26px; }
+
+  .page-content-text p {
+    margin-bottom: 26px; }
+
+  .project-content .text-content, .project-content .image-content {
+    margin-bottom: 40px; }
+
+  .page-section {
+    margin-bottom: 16px; }
+
   .container,
   .container-small,
   .container-full {

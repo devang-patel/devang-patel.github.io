@@ -212,6 +212,18 @@
   }
 }
 @media (max-width: 500px) {
+  .project-content p {
+      margin-bottom: 26px;
+  }
+  .page-content-text p {
+      margin-bottom: 26px;
+  }
+  .project-content .text-content, .project-content .image-content {
+      margin-bottom: 40px;
+  }
+  .page-section {
+      margin-bottom: 16px;
+  }
   .container,
   .container-small,
   .container-full {
