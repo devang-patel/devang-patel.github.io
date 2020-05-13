@@ -318,7 +318,7 @@ footer {
 .text-left {
   text-align: left; }
 
-.btn {
+.prm-btn {
   font-size: 16px;
   padding: 14px 24px;
   border-radius: 40px;
@@ -682,7 +682,7 @@ footer {
     color: #283c63; }
   .light-mode header.sticky {
     background: #ffffff; }
-  .light-mode .btn {
+  .light-mode .prm-btn {
     background: #283c63;
     color: #ffffff; }
 
@@ -701,7 +701,7 @@ footer {
     color: #bda7a7; }
   .dark-mode header.sticky {
     background: #202040; }
-  .dark-mode .btn {
+  .dark-mode .prm-btn {
     background: #ffbd69;
     color: #202040; }
 
@@ -899,8 +899,8 @@ footer {
 
   li,
   p {
-    font-size: 16px;
-    line-height: 24px; }
+    font-size: 18px;
+    line-height: 26px; }
 
   .col-2,
   .grid-item {
