@@ -97,6 +97,10 @@
 
 .lab-item {
   width:45%;
+
+  h4 {
+    margin-bottom: 12px;
+  }
 }
 
 .lab-intro {
@@ -357,7 +361,7 @@
   }
 
   p {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   h2,
   h3,
@@ -393,6 +397,10 @@
   header.sticky {
     background: $light_body_bg;
   }
+  .btn {
+    background:$light_headings_color;
+    color:$light_body_bg;
+  }
 
 }
 
@@ -415,5 +423,9 @@
 
   header.sticky {
     background: $dark_body_bg;
+  }
+  .btn {
+    background:$dark_headings_color;
+    color:$dark_body_bg;
   }
 }

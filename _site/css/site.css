@@ -315,6 +315,18 @@ footer {
   position: relative;
   margin-bottom: 40px; }
 
+.text-left {
+  text-align: left; }
+
+.btn {
+  font-size: 16px;
+  padding: 14px 24px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  display: inline-block;
+  margin-bottom: 24px; }
+
 .caption {
   opacity: 0.65;
   font-style: italic;
@@ -326,6 +338,9 @@ footer {
   height: 600px;
   overflow: hidden;
   position: relative; }
+
+.page-section {
+  margin-bottom: 36px; }
 
 .clearfix:before,
 .clearfix:after {
@@ -423,6 +438,8 @@ footer {
 
 .lab-item {
   width: 45%; }
+  .lab-item h4 {
+    margin-bottom: 12px; }
 
 .lab-intro {
   margin-bottom: 32px; }
@@ -640,7 +657,7 @@ footer {
 .page-content-text h1 span {
   display: inline-block; }
 .page-content-text p {
-  margin-bottom: 70px; }
+  margin-bottom: 40px; }
 .page-content-text h2,
 .page-content-text h3,
 .page-content-text h4 {
@@ -665,6 +682,9 @@ footer {
     color: #283c63; }
   .light-mode header.sticky {
     background: #ffffff; }
+  .light-mode .btn {
+    background: #283c63;
+    color: #ffffff; }
 
 .dark-mode {
   background: #202040; }
@@ -681,6 +701,9 @@ footer {
     color: #bda7a7; }
   .dark-mode header.sticky {
     background: #202040; }
+  .dark-mode .btn {
+    background: #ffbd69;
+    color: #202040; }
 
 @media (max-width: 1700px) {
   .container {
