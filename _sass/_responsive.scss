@@ -207,6 +207,9 @@
   .content {
       margin: 120px 0 0 0;
   }
+  .logo h1 {
+    width:100px;
+  }
 }
 @media (max-width: 500px) {
   .container,
@@ -214,6 +217,14 @@
   .container-full {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .sticky {
+    opacity: 0.9;
+  }
+  nav li {
+      float: left;
+      margin-left: 20px;
+      margin-top: 16px;
   }
 
 
