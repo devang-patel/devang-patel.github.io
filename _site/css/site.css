@@ -124,7 +124,7 @@ h2 {
 
 h3 {
   font-size: 34px;
-  margin-bottom: 16px; }
+  margin-bottom: 8px; }
 
 h4 {
   font-weight: 600;
@@ -387,7 +387,7 @@ footer {
   background: #766d84; }
 
 .project-hero .hero-content h1 {
-  margin-bottom: 20px; }
+  margin-bottom: 8px; }
   .project-hero .hero-content h1 span {
     display: inline-block; }
 
@@ -439,7 +439,7 @@ footer {
 .lab-item {
   width: 45%; }
   .lab-item h4 {
-    margin-bottom: 12px; }
+    margin-bottom: 8px; }
 
 .lab-intro {
   margin-bottom: 32px; }

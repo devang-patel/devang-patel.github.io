@@ -6,4 +6,10 @@
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/site.css" />
 
+{% if page.noindex == true %}
+<meta name="robots" content="noindex">
+{% endif %}
+
+
+
 
