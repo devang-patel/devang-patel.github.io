@@ -392,7 +392,7 @@
   h6 {
     color: $light_headings_color;
   }
-  p, span, li {
+  p, li {
     color: $light_paragraph_color;
   }
   a {
@@ -405,7 +405,19 @@
     background:$light_headings_color;
     color:$light_body_bg;
   }
-
+  .highlight, .highlighter-rouge .highlight, a>code, p>pre, p>code, p>nobr>code, li>code, li>pre, h5>code, .note>code {
+      background-color: $light_paragraph_color;
+      color:$light_body_bg;
+      max-width: 100%;
+      overflow-x: auto;
+      vertical-align: middle;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.5);
+      -moz-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.1),0 -1px 0 rgba(0,0,0,0.5);
+      box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.5);
+  }
 }
 
 .dark-mode {
@@ -418,7 +430,7 @@
   h6 {
     color: $dark_headings_color;
   }
-  p, span, li {
+  p, li {
     color: $dark_paragraph_color;
   }
   a {
@@ -432,4 +444,17 @@
     background:$dark_headings_color;
     color:$dark_body_bg;
   }
+  .highlight, .highlighter-rouge .highlight, a>code, p>pre, p>code, p>nobr>code, li>code, li>pre, h5>code, .note>code {
+    background-color: $dark_paragraph_colorJSO;
+    color:$dark_body_bg;
+    max-width: 100%;
+    overflow-x: auto;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.1),0 -1px 0 rgba(0,0,0,0.5);
+    box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.5);
+}
 }

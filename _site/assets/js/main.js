@@ -102,7 +102,7 @@
 
   $(window).on("scroll", function () {
     var height = $(window).scrollTop();
-    if (height > 100) {
+    if (height > 30) {
       $("header").addClass("sticky")
     } else {
       $("header").removeClass("sticky")
