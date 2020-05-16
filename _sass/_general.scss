@@ -110,7 +110,6 @@ pre.highlight, .highlighter-rouge pre.highlight, .highlight>pre, .highlighter-ro
     width: 100%;
     overflow: auto;
 }
-
 pre, code {
     font-size: 16px;
 }
@@ -121,7 +120,7 @@ pre, code span {
     white-space: pre;
     display: inline-block;
     margin: 0;
-    font: 14px/1.625em, "Courier New", Courier, "Liberation Mono", monospace;
+    font: 14px/1.625em Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
 }
 figure {
     margin:0;
