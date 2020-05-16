@@ -98,3 +98,45 @@ html {
     width: 50%;
     float: left;
 }
+pre.highlight, .highlighter-rouge pre.highlight, .highlight>pre, .highlighter-rouge .highlight>pre {
+    padding: 10px 0.5em;
+}
+
+.highlighter-rouge .highlight {
+    margin: 0;
+}
+.highlight, .highlighter-rouge .highlight {
+    margin: 1em 0;
+    width: 100%;
+    overflow: auto;
+}
+.highlight, .highlighter-rouge .highlight, a>code, p>pre, p>code, p>nobr>code, li>code, li>pre, h5>code, .note>code {
+    background-color: #272727;
+    color: #fff;
+    max-width: 100%;
+    overflow-x: auto;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.1),0 -1px 0 rgba(0,0,0,0.5);
+    box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.5);
+}
+
+pre, code {
+    font-size: 16px;
+}
+pre {
+    overflow: auto;
+}
+pre, code span {
+    white-space: pre;
+    display: inline-block;
+    margin: 0;
+    font: 14px/1.625em Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+    padding: 0 0.5em;
+}
+figure {
+    margin:0;
+}

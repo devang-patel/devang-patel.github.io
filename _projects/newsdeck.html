@@ -22,22 +22,60 @@ link: http://newsdeck.mokko.io
     <p>NewsDeck brings you the top news feeds from around the world - and you can use simple, intuitive gestures to read exactly what you are interested in. NewsDeck was built within 2 weeks at my former company Mokko. This was one of our in-house projects so I was constrained by limited time.</p>
 </div>
 
+<div class="container-small text-content">
+    <h5>Problem</h5>
+    <p>Its called <strong>Content Paralysis.</strong> One of the problems I always had while reading news is too much content, it's endless and it paralyses your brain. You'll always have some news, but its up to you what you prefere to read. Problem here is not the content itself but how can we present this content to the user in better way.
+    </p>
+</div>
+
+
+<div class="container-small text-content">
+    <h5>My role</h5>
+    <p>I pretty much did everything, from understanding the problem, designing the MVP to building the app
+    </p>
+</div>
+
+
 <div class="container image-content">
     <img src="{{ site.baseurl }}/assets/images/newsdeck-app-img-1.png" class="full-img" alt="">
 </div>
 
 <div class="container-small text-content">
-    <h5>Problem</h5>
-    <p>One of the problems I always had while reading news is too much content, it's endless and it’s not good for your brain. So, NewsDeck was built out of a need to seek clean, minimalistic and easily consumable news reading experience. There were lots of apps out there for news reading, most of the apps were just endless scroll of news content dumped on your mobile screen so I decided to build my own version.
+    <h5>My Approach</h5>
+    <p>As I had a limited time to actually build and ship this app, I didn't want to build my on database and backend. I started looking for open source news API providers. In the end, I found a really good one <a href="https://newsapi.org/" target="_blank">NewsAPI.org.</a> It had most of the popular news sources, It was perfect for what I needed.
     </p>
+    <p>This is the sample of the data I was getting from API endpoint:</p>
+    
+
+    {% highlight javascript %}
+
+    {
+       "source":{
+          "id":"cnn",
+          "name":"CNN"
+       },
+       "author":"Jeremy Herb, Manu Raju and Ali Zaslav, CNN",
+       "title":"Richard Burr to step down as Intelligence Committee chairman - CNN",
+       "description":"Republican Sen. Richard Burr of North Carolina is stepping aside as chairman of the influential Senate Intelligence Committee while he's under investigation for stock trades he made ahead of the market downturn sparked by the coronavirus pandemic.",
+       "url":"https://www.cnn.com/2020/05/14/politics/richard-burr-steps-down-intel-chairman/index.html",
+       "urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/200514001445-richard-burr-warrant-cell-phone-seized-la-times-vpx-00000510-super-tease.jpg",
+       "publishedAt":"2020-05-14T18:34:00Z",
+       "content":"Washington (CNN)Republican Sen. Richard Burr of North Carolina is stepping aside as chairman of the influential Senate Intelligence Committee while he's under investigation for stock trades he made ahead of the market downturn sparked by the coronavirus pande… [+9008 chars]"
+    }
+                {% endhighlight %}
+    <br>
+
+    <p>Content-First Design, is an approach when you let the content of your app or website determine its design and layout. I basically plugged in API data to Sketch and started designing using real data.</p>
 </div>
 
 <div class="container image-content">
-    <img src="{{ site.baseurl }}/assets/images/newsdeck-app-img-2.png" class="full-img" alt="">
+    <img src="{{ site.baseurl }}/assets/images/newsdeck-app-api.png" class="full-img" alt="">
 </div>
 
 <div class="container-small text-content">
-    <p>Whenever we’re reading a news we always have some sort of preference for news sources, news categories and we either want to read the latest or popular news content. So I wanted to keep these options easily configurable in the app.</p>
+    <h5>Design & build</h5>
+    <p>Onces API data was linked to Sketch layers, Its amazing how quickly you can iterate your designs. I finalized designs in couple of days and jumped on to building the app.</p>
+    <p>For building native iOS & Android apps, I used an awesome tool called <a href="https://fuseopen.com/" target="_blank">Fuse.</a> It allows you to build native apps using its own UX markup language, which is very easy to learn if you know html, javascript. I finished MVP version in about a week and started using this app on my phone. After testing it and fixing some bugs we launched it to both app stores under my former company's developer account.</p>
 </div>
 
 <div class="container image-content">
@@ -48,6 +86,35 @@ link: http://newsdeck.mokko.io
     <img src="{{ site.baseurl }}/assets/images/newsdeck-app-img-4.png" class="full-img" alt="">
 </div>
 
+
+<div class="container-small text-content">
+    <h5>On boarding</h5>
+    <p>User onboarding is really simple, you don't need to create an account or sign in. Once you open the app, first screen is welcome screen that gives you a bit of intro about the app and next screen is for selecting your preferences which were stored in device's local storage.</p>
+</div>
+
+
+<div class="container image-content">
+    <img src="{{ site.baseurl }}/assets/images/newsdeck-app-img-2.png" class="full-img" alt="">
+</div>
+
+<div class="container-small text-content">
+    <h5>Website</h5>
+    <p>I also designed a simple website with app store links. you can check it out at <a href="http://newsdeck.mokko.io/" target="_blank">http://newsdeck.mokko.io/</a> </p>
+</div>
+
 <div class="container image-content">
     <img src="{{ site.baseurl }}/assets/images/newsdeck-app-img-5.png" class="full-img" alt="">
+</div>
+
+<div class="container-small text-content">
+    <h5>Final thoughts</h5>
+    <p>Funny how fast you can learn a lot of things by building a product and experimenting with it. I learned many things alongside this project: </p>
+    <p>
+        - I learned how to design using API or JSON data in Sketch app.<br>
+        - I learned a new tool to build native apps. <br>
+        - I learned how to deploy iOS and Android apps to the app store and to track the usage data.
+    </p>
+    <p>Its not just enough to build cool products and expect people to start using it, you have to present it to the world, you have to tell a story about your product.</p>
+
+    <p>App is still live and functional, you can download it and try it out. There might be some a fonts issue as the app hasn't been updated since 2 years.</p>
 </div>
