@@ -389,7 +389,8 @@
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  .col span {
     color: $light_headings_color;
   }
   p, li {
@@ -427,7 +428,8 @@
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  .col span {
     color: $dark_headings_color;
   }
   p, li {

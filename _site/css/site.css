@@ -103,7 +103,7 @@ pre, code span {
   white-space: pre;
   display: inline-block;
   margin: 0;
-  font: 14px/1.625em Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace; }
+  font: 14px/1.625em, "Courier New", Courier, "Liberation Mono", monospace; }
 
 figure {
   margin: 0; }
@@ -701,7 +701,8 @@ footer {
   .light-mode h3,
   .light-mode h4,
   .light-mode h5,
-  .light-mode h6 {
+  .light-mode h6,
+  .light-mode .col span {
     color: #283c63; }
   .light-mode p, .light-mode li {
     color: #283c63; }
@@ -732,7 +733,8 @@ footer {
   .dark-mode h3,
   .dark-mode h4,
   .dark-mode h5,
-  .dark-mode h6 {
+  .dark-mode h6,
+  .dark-mode .col span {
     color: #ffbd69; }
   .dark-mode p, .dark-mode li {
     color: #bda7a7; }
@@ -968,3 +970,6 @@ footer {
   .col-2,
   .grid-item {
     padding-bottom: 80px; } }
+@media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none; } }
