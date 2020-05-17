@@ -113,7 +113,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, p strong, .col strong {
   font-weight: 700;
   font-family: "Playfair Display", serif;
   margin: 0;
@@ -123,7 +123,7 @@ h6 {
   h3 a,
   h4 a,
   h5 a,
-  h6 a {
+  h6 a, p strong a, .col strong a {
     display: inline-block;
     text-decoration: none; }
   h1 strong,
@@ -137,7 +137,9 @@ h6 {
   h5 strong,
   h5 span,
   h6 strong,
-  h6 span {
+  h6 span, p strong strong,
+  p strong span, .col strong strong,
+  .col strong span {
     font-weight: bold; }
 
 h1 {
@@ -173,10 +175,6 @@ li {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   margin: 0; }
-  p strong,
-  span strong,
-  li strong {
-    font-weight: bold; }
 
 p {
   line-height: 32px;
@@ -704,7 +702,7 @@ footer {
   .light-mode h6,
   .light-mode .col span {
     color: #283c63; }
-  .light-mode p, .light-mode li {
+  .light-mode p, .light-mode li, .light-mode .caption {
     color: #283c63; }
   .light-mode a {
     color: #283c63; }
@@ -736,7 +734,7 @@ footer {
   .dark-mode h6,
   .dark-mode .col span {
     color: #ffbd69; }
-  .dark-mode p, .dark-mode li {
+  .dark-mode p, .dark-mode li, .dark-mode .caption {
     color: #bda7a7; }
   .dark-mode a {
     color: #bda7a7; }
