@@ -626,8 +626,13 @@ footer {
   .project-content img.full-img {
     width: 100%; }
   .project-content .text-content,
-  .project-content .image-content {
+  .project-content .image-content,
+  .project-content .video-content {
     margin-bottom: 62px; }
+
+.video-content video {
+  width: 100%;
+  outline: none; }
 
 .project-cover img,
 .project-cover video {

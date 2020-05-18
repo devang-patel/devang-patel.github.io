@@ -297,10 +297,15 @@
   }
 
   .text-content,
-  .image-content {
+  .image-content,
+  .video-content {
     margin-bottom: 62px;
   }
 
+}
+.video-content video {
+  width:100%;
+  outline: none;
 }
 
 .project-cover {
